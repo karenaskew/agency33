@@ -1,0 +1,52 @@
+
+:root {
+    --rory-colour: #58AE58;
+    --fab-colour:  #feaa01;
+    --chonk-colour: #ff531a;
+    --rory-colour-light:  #badeba;
+    --fab-colour-light:  #fed480;
+    --chonk-colour-light: #feac9a;
+
+  }
+
+  .nav-link{
+    color: var(--rory-colour);
+  }
+  .nav-link.active.custom{
+    color: #30362F;
+    background-color: var(--rory-colour-light);
+  }
+
+  .banner-chonk{
+    background-color:  #ff794d;
+  }
+  .bg-rory{
+    background-color: var(--rory-colour-light);
+  }
+  .bg-fab{
+    background-color: var(--fab-colour-light);
+  }
+  .bg-chonk{
+    background-color: var(--chonk-colour-light);
+  }
+  .btn-rory{
+    background-color: var(--rory-colour);
+  }
+  .btn-fab{
+    background-color: var(--fab-colour);
+  }
+  .btn-chonk{
+    background-color: var(--chonk-colour);
+  }
+  .logo-font{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+  body {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
