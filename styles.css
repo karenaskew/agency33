@@ -2,22 +2,24 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 body {
-    background-color: lightcyan;
+    background-color: #37393c;
     margin: 0px;
 }
 .main {
-    padding: 0px 15px;
+    margin: 8px;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px 15px;
+    width: 90%;
 }
 
-.heading {
+.text-centre {
     text-align: center;
 }
 
@@ -26,20 +28,28 @@ header {
     gap: 10px;
     justify-content: right;
     align-items: end;
-    margin:  0 0 5px 0;
+    margin:  0 0 0px 0;
 }
 
+.logo {
+    text-align: left;
+    margin-left: 5px;
+}
+.logo p {
+    font-size: large;
+    margin: 0px;
+
+}
 .nav-item{
     list-style: none;
     display: flex;
     justify-content: left;
     padding: 2px;
     border-radius:3px 3px;
-    background-color: lightblue;
 }
 
 .nav-item a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -47,19 +57,27 @@ header {
     margin-right: 2px;
 }
 
+.nav-item.current a {
+    font-weight: bold;
+    color: #a7bbd7;
+}
+
 .message-alert {
     color: orangered;
 }
 
 .messenger {
-    background-color: white;
-    border: darkblue solid 2px;
+    border: black solid 2px;
     padding: 10px;
+    margin: 10px;
     border-radius: 2px 2px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 60vh;
+    height: 70vh;
+    overflow: scroll;
+    background-color: #3c4859;
+    justify-self: center;
 }
 
 .inbound {
@@ -78,18 +96,17 @@ header {
 }
 .msg-bubble {
     border-radius: 4px 4px;
-    background-color: cadetblue;
+    background-color: #a1bdf2;
+    padding: 5px;
 }
 .msg {
     margin: 0px;
-}
-.msg-bubble {
-    padding: 5px;
 }
 
 .msg p {
     text-align: left;
     margin: 0px;
+    color: black;
 }
 .message-input {
     display: flex;
@@ -97,13 +114,14 @@ header {
     align-items: center;
     background-color: gray;
     border-radius: 2px 2px;
-    padding: 5px;
-    padding-right: 10px;
+    padding: 5px 10px;
+    margin: 5px 5px;
     gap: 10px;
     margin-top: auto;
 }
 input {
     background-color: white;
+    color: black;
     border-radius: 2px 2px;
     border-style: hidden;
     width: 80%;
@@ -113,43 +131,40 @@ input {
 button.send {
     background-color: darkgreen;
     color: white;
-    border-radius: 2px 2px;
-    padding: 4px;
     width: 60px;
     
     
 }
-.button.send {
-    width: 40px;
+.button {
     text-align: center;
-    
+    border-radius: 2px 2px;
+    padding: 4px;
 }
+.button.submit {
+    background-color: #de2c2c;
+}
+
 
 
 @media (max-width: 600px) {
     header {
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
+        flex-direction: row;
   
     }
     .logo {
-        width: 100%;
-        text-align: center;
+        margin-left: 10px;
+        width: 200px;
+        text-align: left;
     }
     .navigation {
-        width: 100%;
         padding-right: 5px;
-        justify-content: center;
-        align-items: center;
+        justify-content: right;
+        align-items: end;
     }
     .navigation ul {
         display: flex;
     }
-    .nav-item a {
-        display: none;
-    }
-    .nav-item.current a {
-        font-weight: bold;
-    }
+
 
 }

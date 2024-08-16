@@ -44,6 +44,18 @@ I'm not here anymore, to find me you'll want to look behind the bedroom [door]
 Our next detective sent us this clue, hopefully it means something to you?
 
 Crossword with clues about bfox or me and jay
+1.the name of our band (5,4)
+2.the number of sisters I have (3)
+3.my latest new skill im learning (6)
+4.my favourite sport (5)
+5.the colour of my fur (6)
+6.my role in the band (7)
+7.my favourite treat (9)
+8.my breed (9)
+9.my favourite music genre (4)
+
+5th, 2nd, 3rd, 2nd, 2nd, 1st, 3rd, 7th, 2nd
+
 
 word in the middle spells out "undersofa"
 *finds bfox* *fills out form* *alert with next clue*
