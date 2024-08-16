@@ -77,9 +77,22 @@ function outboundMessage(msgtext) {
         }
 };
 
-document.querySelectorAll(".button.send")[0].addEventListener("click", function() {
+var sendButton = document.querySelectorAll(".button.send")[0]
+
+function buttonPressed() {
+    sendButton.style.backgroundColor = "white"
+}
+function buttonUnpressed() {
+    sendButton.style.backgroundColor = "#023c8b"
+}
+
+sendButton.addEventListener("click", function() {
+    sendButton.style.color = "black"
     outboundMessage(document.querySelectorAll("input")[0].value);
     document.querySelectorAll("input")[0].value = "";
+    setTimeout(function () {
+        sendButton.style.color = "white"
+    }, 100);
 });
 
 
