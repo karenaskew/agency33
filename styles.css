@@ -128,22 +128,24 @@ input {
     height: 20px;
     padding-left: 3px;
 }
-button.send {
-    background-color: darkgreen;
-    color: white;
-    width: 60px;
-    
-    
-}
 .button {
     text-align: center;
-    border-radius: 2px 2px;
+    border-radius: 10%;
+    border: none;
     padding: 4px;
 }
+button.send {
+    background-color: #023c8b;
+    color: white;
+    width: 60px;
+    font-size: medium;
+    
+    
+}
+
 .button.submit {
     background-color: #de2c2c;
 }
-
 
 
 @media (max-width: 600px) {
