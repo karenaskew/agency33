@@ -1,6 +1,6 @@
 
 var numMessageBubbles = document.querySelectorAll(".msg").length;
-var numMessagesDelivered = 1;
+var numMessagesDelivered = 2;
 var cluesGiven = 0;
 
 var clue1 = "Our next detective sent us this clue, hopefully it means something to you?\
@@ -29,7 +29,7 @@ var clue3 = "Now you've found the boys we need you to keep them safe and bring t
             <br/><br/>We thank you for your assistance.";
 
 
-for (var i=1; i<numMessageBubbles; i++) { //hide message bubbles
+for (var i=numMessagesDelivered; i<numMessageBubbles; i++) { //hide message bubbles
     document.querySelectorAll(".msg")[i].style.display = "none";
 };
 
@@ -67,24 +67,30 @@ function sendMessage(messageText, direction) {
 };
 
 function outboundMessage(msgtext) {
+    var found = msgtext.toLowerCase()
     if (msgtext.length > 0) {
         sendMessage(msgtext, "outbound");
-        var msgReply = getReply()
+    };
+    if (found.includes("found")) {
+        var msgReply = getReply();
         setTimeout(sendMessage,3000, msgReply, "inbound");
-        var msgClue = getClue()
+        var msgClue = getClue();
         setTimeout(sendMessage,5000, msgClue, "inbound");
         cluesGiven++;
-        }
+        };
+    
 };
 
-var sendButton = document.querySelectorAll(".button.send")[0]
+var sendButton = document.querySelectorAll(".button.send")[0];
 
 sendButton.addEventListener("click", function() {//button pressed
-    sendButton.style.color = "black"
+    sendButton.style.color = "#023c8b";
+    sendButton.style.backgroundColor = "white";
     outboundMessage(document.querySelectorAll("input")[0].value);
     document.querySelectorAll("input")[0].value = "";
     setTimeout(function () {
-        sendButton.style.color = "white"
+        sendButton.style.color = "white";
+        sendButton.style.backgroundColor = "#023c8b";
     }, 100);
 });
 
