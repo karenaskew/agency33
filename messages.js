@@ -79,14 +79,7 @@ function outboundMessage(msgtext) {
 
 var sendButton = document.querySelectorAll(".button.send")[0]
 
-function buttonPressed() {
-    sendButton.style.backgroundColor = "white"
-}
-function buttonUnpressed() {
-    sendButton.style.backgroundColor = "#023c8b"
-}
-
-sendButton.addEventListener("click", function() {
+sendButton.addEventListener("click", function() {//button pressed
     sendButton.style.color = "black"
     outboundMessage(document.querySelectorAll("input")[0].value);
     document.querySelectorAll("input")[0].value = "";
