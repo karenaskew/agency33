@@ -21,7 +21,7 @@ var clue2 = "Our last detective may be harder to get, maybe try looking where cl
 var clue3 = "Now you've found the boys we need you to keep them safe and bring them to the safe house on 3rd September 2024. \
             <br/>Details of your flight along with compensation for your time are below: \
             <br/><br/>Tuesday 3rd September \
-            <br/>London Heathrow Terminal 4 \
+            <br/>London Heathrow Terminal 5 \
             <br/>15:40pm \
             <br/><br/>Please ensure our detectives are on this flight and remain hidden from the public. \
             <br/>THIS IS A TOP SECRET MISSION. \
